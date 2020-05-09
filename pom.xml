@@ -62,11 +62,11 @@
         <mockito.version>1.10.19</mockito.version>
         <slf4j.version>1.7.21</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <netty.version>4.1.22.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
         <junit.version>5.0.0</junit.version>
         <junit.surefire.plugin.version>1.0.0</junit.surefire.plugin.version>
         <mockito.version>2.18.3</mockito.version>
-        <jackson.version>2.9.5</jackson.version>
+        <jackson.version>2.10.2</jackson.version>
     </properties>
     <dependencies>
         <dependency>
