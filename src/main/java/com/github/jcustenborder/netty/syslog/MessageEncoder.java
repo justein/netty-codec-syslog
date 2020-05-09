@@ -83,6 +83,8 @@ public class MessageEncoder extends MessageToMessageEncoder<Message> {
     final ByteBuf buffer = context.alloc().buffer();
     EncoderHelper.appendPriority(buffer, message);
 
+
+    System.out.println("============"+message.date().format(this.cefDateFormat));
     buffer.writeCharSequence(message.date().format(this.cefDateFormat), this.charset);
     buffer.writeCharSequence(" ", this.charset);
     buffer.writeCharSequence(message.host(), this.charset);

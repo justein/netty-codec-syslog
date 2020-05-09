@@ -28,6 +28,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -42,7 +43,9 @@ public abstract class MessageEncoderTest {
 
   @BeforeEach
   public void setup() {
-    this.encoder = new MessageEncoder(DateTimeFormatter.ofPattern("MMM d HH:mm:ss"));
+  /**ofPattern默认进行了本地化处理，这里默认是中文，所以后面parse会出错，添加Locale参数即可显示英文*/
+//    this.encoder = new MessageEncoder(DateTimeFormatter.ofPattern("MMM d HH:mm:ss"));
+    this.encoder = new MessageEncoder(DateTimeFormatter.ofPattern("MMM d HH:mm:ss",Locale.US));
   }
 
   protected abstract File testsPath();

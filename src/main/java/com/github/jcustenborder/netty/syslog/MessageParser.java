@@ -52,7 +52,7 @@ public abstract class MessageParser {
 
         //This supports
         new DateTimeFormatterBuilder()
-            .appendPattern("MMM d")
+            .appendPattern("MMM  d")
             .optionalStart()
             .appendPattern("[ yyyy]")
             .parseDefaulting(ChronoField.YEAR_OF_ERA, 1)
