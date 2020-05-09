@@ -1,0 +1,13 @@
+{
+  "input" : "Feb 2 09:00:14 avas.example.com amavisd[11569]: No $unfreeze, not using it",
+  "expected" : {
+    "date" : "2018-02-02T09:00:14",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Feb 2 09:00:14 avas.example.com amavisd[11569]: No $unfreeze, not using it",
+    "type" : "RFC3164",
+    "host" : "avas.example.com",
+    "message" : "No $unfreeze, not using it",
+    "processId" : "11569",
+    "tag" : "amavisd"
+  }
+}

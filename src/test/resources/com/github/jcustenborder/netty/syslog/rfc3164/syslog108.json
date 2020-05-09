@@ -1,0 +1,13 @@
+{
+  "input" : "Feb 2 09:00:14 avas.example.com amavisd[11569]: Found $gzip at /usr/bin/gzip",
+  "expected" : {
+    "date" : "2018-02-02T09:00:14",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Feb 2 09:00:14 avas.example.com amavisd[11569]: Found $gzip at /usr/bin/gzip",
+    "type" : "RFC3164",
+    "host" : "avas.example.com",
+    "message" : "Found $gzip at /usr/bin/gzip",
+    "processId" : "11569",
+    "tag" : "amavisd"
+  }
+}

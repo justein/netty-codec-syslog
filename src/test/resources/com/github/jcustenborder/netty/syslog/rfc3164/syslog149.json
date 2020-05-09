@@ -1,0 +1,13 @@
+{
+  "input" : "Mar 7 04:22:00 avas anacron[11464]: Updated timestamp for job `cron.weekly' to 2004-03-07",
+  "expected" : {
+    "date" : "2018-03-07T04:22:00",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Mar 7 04:22:00 avas anacron[11464]: Updated timestamp for job `cron.weekly' to 2004-03-07",
+    "type" : "RFC3164",
+    "host" : "avas",
+    "message" : "Updated timestamp for job `cron.weekly' to 2004-03-07",
+    "processId" : "11464",
+    "tag" : "anacron"
+  }
+}

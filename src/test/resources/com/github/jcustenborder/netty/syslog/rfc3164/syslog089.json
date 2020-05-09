@@ -1,0 +1,13 @@
+{
+  "input" : "Feb 2 09:00:14 avas.example.com amavisd[11568]: Module Archive::Tar 1.07",
+  "expected" : {
+    "date" : "2018-02-02T09:00:14",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Feb 2 09:00:14 avas.example.com amavisd[11568]: Module Archive::Tar 1.07",
+    "type" : "RFC3164",
+    "host" : "avas.example.com",
+    "message" : "Module Archive::Tar 1.07",
+    "processId" : "11568",
+    "tag" : "amavisd"
+  }
+}

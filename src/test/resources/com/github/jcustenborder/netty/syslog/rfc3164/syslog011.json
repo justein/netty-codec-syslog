@@ -1,0 +1,12 @@
+{
+  "input" : "Mar 12 12:01:03 server4 snort: Snort initialization completed successfully",
+  "expected" : {
+    "date" : "2018-03-12T12:01:03",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Mar 12 12:01:03 server4 snort: Snort initialization completed successfully",
+    "type" : "RFC3164",
+    "host" : "server4",
+    "message" : "Snort initialization completed successfully",
+    "tag" : "snort"
+  }
+}

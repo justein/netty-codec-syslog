@@ -1,0 +1,12 @@
+{
+  "input" : "Oct 12 14:58:35 example_host BG: 1234:01:01:site=support.example.com;who=John Smith(jsmith);who_ip=192.168.1.1; event=login;target=web/login;status=success",
+  "expected" : {
+    "date" : "2018-10-12T14:58:35",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Oct 12 14:58:35 example_host BG: 1234:01:01:site=support.example.com;who=John Smith(jsmith);who_ip=192.168.1.1; event=login;target=web/login;status=success",
+    "type" : "RFC3164",
+    "host" : "example_host",
+    "message" : "1234:01:01:site=support.example.com;who=John Smith(jsmith);who_ip=192.168.1.1; event=login;target=web/login;status=success",
+    "tag" : "BG"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "input" : "Mar 12 12:20:00 server2 /USR/SBIN/CRON[6837]: (root) CMD ( /usr/lib/sa/sa1 )",
+  "expected" : {
+    "date" : "2018-03-12T12:20:00",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Mar 12 12:20:00 server2 /USR/SBIN/CRON[6837]: (root) CMD ( /usr/lib/sa/sa1 )",
+    "type" : "RFC3164",
+    "host" : "server2",
+    "message" : "(root) CMD ( /usr/lib/sa/sa1 )",
+    "processId" : "6837",
+    "tag" : "/USR/SBIN/CRON"
+  }
+}

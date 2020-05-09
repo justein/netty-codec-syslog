@@ -1,0 +1,12 @@
+{
+  "input" : "Mar 12 03:19:51 server5 syslog: su : + tty?? root-informix",
+  "expected" : {
+    "date" : "2018-03-12T03:19:51",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Mar 12 03:19:51 server5 syslog: su : + tty?? root-informix",
+    "type" : "RFC3164",
+    "host" : "server5",
+    "message" : "su : + tty?? root-informix",
+    "tag" : "syslog"
+  }
+}

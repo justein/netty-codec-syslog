@@ -1,0 +1,13 @@
+{
+  "input" : "Mar 12 09:05:22 server6 ftpd[27281]: exiting on signal 14",
+  "expected" : {
+    "date" : "2018-03-12T09:05:22",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Mar 12 09:05:22 server6 ftpd[27281]: exiting on signal 14",
+    "type" : "RFC3164",
+    "host" : "server6",
+    "message" : "exiting on signal 14",
+    "processId" : "27281",
+    "tag" : "ftpd"
+  }
+}

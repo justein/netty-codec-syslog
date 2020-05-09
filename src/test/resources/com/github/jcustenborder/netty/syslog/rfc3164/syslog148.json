@@ -1,0 +1,13 @@
+{
+  "input" : "Mar 7 04:22:00 avas CROND[11460]: (cronjob) CMD (run-parts /etc/cron.weekly)",
+  "expected" : {
+    "date" : "2018-03-07T04:22:00",
+    "remoteAddress" : "localhost",
+    "rawMessage" : "Mar 7 04:22:00 avas CROND[11460]: (cronjob) CMD (run-parts /etc/cron.weekly)",
+    "type" : "RFC3164",
+    "host" : "avas",
+    "message" : "(cronjob) CMD (run-parts /etc/cron.weekly)",
+    "processId" : "11460",
+    "tag" : "CROND"
+  }
+}
