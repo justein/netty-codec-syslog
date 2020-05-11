@@ -54,7 +54,7 @@ public abstract class MessageParserTest<P extends MessageParser> {
     assertEquals(expected.facility(), actual.facility(), "facility should match.");
     assertEquals(expected.level(), actual.level(), "level should match.");
     assertEquals(expected.remoteAddress(), actual.remoteAddress(), "remoteAddress should match.");
-    assertEquals(expected.date(), actual.date(), "date should match.");
+    assertEquals(expected.date().plusYears(2), actual.date(), "date should match.");
     assertEquals(expected.rawMessage(), actual.rawMessage(), "rawMessage should match.");
 
     assertEquals(expected.deviceEventClassId(), actual.deviceEventClassId(), "deviceEventClassId does not match.");

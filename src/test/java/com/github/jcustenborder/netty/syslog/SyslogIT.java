@@ -51,7 +51,7 @@ public abstract class SyslogIT {
     final int count = 100;
     SyslogIF syslogIF = syslogIF();
     for (int i = 0; i < count; i++) {
-      syslogIF.info("foo");
+      syslogIF.info("{\"node\":\"172.168.1.2\",\"node_id\":\"EXEBWSA>HJ+LLJFS\",\"unit_id\":\"\",\"unitname\":\"\",\"computername\":\"WIN-182\",\"username\":\"张三\", \"departmentid\":\"95141\",\"department\":\"IT support\",\"program\":\"d:\\projects\\zushen\\svn\\windows\\trunk\\bin\\windows\\Debug\\client.hook\\hooktest.exe\",\"facility\":\"c2s\",\"object\":\"10.10.1.47\", \"details\":\"账户名称;zhangsan;密码强度;没有密码;密码长度;0;自动登录;否;”,\"result\":\"1\",\"entrystamp\":\"1525221667262\", \"level\":\"6\",\"type\":\"process_connect\", \"producttype\":\"h\",\"behaviourtype\":\"4\",\"reservation\":\"IPv4，TCP\" ,\"gid\"：\"全局统一id\",\"op\":{\"src\":\"\",\"dest\":\"80\"}，\"raw\":\"{\\\"foo\\\":\\\"bar\\\"}\" }");
     }
     syslogIF.flush();
 

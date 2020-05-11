@@ -29,6 +29,7 @@ import java.time.temporal.TemporalAccessor;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -52,13 +53,13 @@ public abstract class MessageParser {
 
         //This supports
         new DateTimeFormatterBuilder()
-            .appendPattern("MMM  d")
-            .optionalStart()
+            .appendPattern("MMM d")
+            .optionalStart() //用于表示 可选部分 的开始
             .appendPattern("[ yyyy]")
             .parseDefaulting(ChronoField.YEAR_OF_ERA, 1)
-            .optionalEnd()
+            .optionalEnd()//用于表示 可选部分 的结束
             .appendPattern(" HH:mm:ss")
-            .toFormatter()
+            .toFormatter(Locale.US) //通过添加Locale解决中文月份问题
     );
 
     this.matcherStructuredData = initMatcher("\\[([^\\]]+)\\]");
