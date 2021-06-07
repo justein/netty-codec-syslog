@@ -58,7 +58,7 @@
         <url>https://github.com/jcustenborder/netty-codec-syslog/issues</url>
     </issueManagement>
     <properties>
-        <logback.version>1.1.8</logback.version>
+        <logback.version>1.2.0</logback.version>
         <mockito.version>1.10.19</mockito.version>
         <slf4j.version>1.7.21</slf4j.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
